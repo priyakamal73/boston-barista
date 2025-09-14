@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, rgb(127, 69, 37) 0%, rgb(168, 125, 79) 100%);
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 85px;
+    line-height: 119px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    line-height: 91px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h6 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 24.75px;
+    font-weight: 500;
+}
+
+button,
+input,
+textarea {
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,21 @@
+.mobileMenuItems ul {
+    padding: 0;
+    margin: 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.menuItem {
+    list-style: none;
+}
+
+.menuItem a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+}
