@@ -1,0 +1,120 @@
+.card :global(.ant-card-body) {
+    padding: 0 !important;
+    color: white;
+}
+
+.card :global(.ant-card-body)::before,
+.card :global(.ant-card-body)::after {
+    display: none !important;
+    content: none !important;
+}
+
+.card {
+    padding: 35px 15px 15px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    margin: 0px 0px 15px;
+}
+
+.card h3 {
+    text-transform: capitalize
+}
+
+.card p {
+    margin: 20px 0px 40px;
+}
+
+.card button {
+    width: 100%;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 21px 12px -10px rgba(0, 0, 0, 0.3);
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    transition: all 0.3s linear;
+}
+
+.card button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+.card button a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .card {
+        padding: 35px 15px 40px;
+        width: 55%;
+    }
+
+    .card button {
+        width: 85%;
+    }
+
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .card {
+        padding: 35px 15px 40px;
+    }
+
+    .card button {
+        width: 85%;
+    }
+}
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .card {
+        width: 55%;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .card {
+        width: 55%;
+    }
+
+    .card h4 {
+        font-size: 28px;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .card h4 {
+        font-size: 28px;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+}

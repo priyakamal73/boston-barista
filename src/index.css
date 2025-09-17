@@ -13,6 +13,11 @@ body {
     padding: 0;
 }
 
+.section {
+    margin: 0px 0px 70px;
+}
+
+
 h1 {
     font-family: "Playfair Display", serif;
     font-size: 85px;
@@ -67,10 +72,30 @@ p {
     font-size: 15px;
     line-height: 24.75px;
     font-weight: 500;
+    color: #FFFFFFA6;
 }
 
 button,
 input,
 textarea {
     font-family: "Montserrat", sans-serif;
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .section {
+        margin: 0px;
+    }
+}
+
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .section {
+        margin: 0px;
+    }
+
+    h2{
+        line-height: 50px;
+    }
 }

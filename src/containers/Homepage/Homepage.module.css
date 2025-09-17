@@ -1,83 +1,74 @@
 .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("../../assets/herobanner.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    /* background-size: 44.5% auto; */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../assets/herobanner.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.drinksBg {
+  background-image: url('../../assets/drinksBg.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.croissantBg {
+  background-image: url('../../assets/croissantBg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {}
+
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .background::before {
+    background-size: 100% 85%;
+  }
+}
+
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .background::before {
+    background-size: 100% auto;
+  }
+}
+
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+  .background::before {
     background-size: auto;
-    z-index: -1;
-    opacity: 0.25;
-    /* border: 3px solid white; */
+  }
 }
 
-/* iPad Mini Portrait */
-@media only screen 
-  and (width: 768px) 
-  and (height: 1024px) 
-  and (orientation: portrait) {
-    .background::before {
-        background-size: 100% 100%;
-    }
-}
+/*mobile portrait*/
+@media(max-width: 666px) {
+  .background::before {
+    background-size: 100% 100%;
+  }
 
-/* iPad Mini Landscape */
-@media only screen 
-  and (width: 1024px) 
-  and (height: 768px) 
-  and (orientation: landscape) {
-    .background::before {
-        background-size: 50% 100%;
-    }
-}
+  .drinksBg {
+    padding: 60px 0px 0px 0px;
+  }
 
-/* iPad Air Portrait */
-@media only screen 
-  and (width: 820px) 
-  and (height: 1180px) 
-  and (orientation: portrait) {
-    .background::before {
-        background-size: 100% 100%;
-    }
-}
-
-/* iPad Air Landscape */
-@media only screen 
-  and (width: 1180px) 
-  and (height: 820px) 
-  and (orientation: landscape) {
-    .background::before {
-        background-size: 50% 100%;
-    }
-}
-
-/* iPad Pro Portrait */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-width: 1024px)   /* exact match for width */
-  and (min-height: 1366px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) {
-    .background::before {
-        background-size: 100% 100%;
-    }
-}
-
-
-/* iPad Pro Landscape */
-@media only screen 
-  and (width: 1366px) 
-  and (height: 1024px) 
-  and (orientation: landscape) {
-   
-}
-
-@media(max-width: 767px){
-    .background::before {
-        background-size: 100% 100%;
-    }
+  .buyForHome {
+    padding: 115px 0px 0px 0px;
+  }
 }

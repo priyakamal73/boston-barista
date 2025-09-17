@@ -1,0 +1,66 @@
+.links {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s linear;
+}
+
+.links:hover {
+    color: #D6C1B5;
+}
+
+.links span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.left {
+    justify-content: left;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: right;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+
+    .left,
+    .center {
+        justify-content: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+
+    .left,
+    .center {
+        justify-content: center;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .left,
+    .center {
+        justify-content: center;
+    }
+}

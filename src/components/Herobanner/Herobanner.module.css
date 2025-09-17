@@ -1,187 +1,138 @@
 .herobanner {
-    display: flex;
-    padding: 55px 0px 55px;
-    min-height: 685px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 50px 0px 0px;
+    position: relative;
+    min-height: 745px;
 }
 
-.heroLeft {
-    width: 55%;
-}
-
-.heroLeft h1 {
+.herobanner h1 {
     margin: 15px 0px 80px;
+}
 
+.herotext2 {
+    display: block;
 }
 
 .tagline {
     display: flex;
-    gap: 18px;
+    gap: 15px;
+    align-items: center;
 }
 
-.tagline i {
-    font-size: 32px;
+.tagline {
+    font-size: 30px;
 }
 
-.heroRight {
-    width: 45%;
+.tagtext2 {
+    display: block;
+}
+
+.heroImage img {
     position: absolute;
+    top: 295px;
+    right: 85px;
+    width: auto;
+    height: auto;
 }
 
-.heroRight img {
-    position: relative;
-    right: -70%;
-    bottom: -240px;
-}
-
-/* Desktop: up to 1200px */
-@media (max-width: 1200px) {
-    .herobanner {
-        min-height: 770px;
-    }
-
-    .heroRight img {
-        bottom: -325px;
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .heroImage img {
+        top: 295px;
+        right: -60px;
     }
 }
 
-/* Tablet: 768px–1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .herobanner {
-        min-height: 940px;
-    }
-
-    .heroLeft {
-        width: 100%;
-        text-align: center;
-    }
-
-    .heroLeft h1 {
-        margin: 15px 0px 30px;
-    }
-
-    .tagline {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .heroRight img {
-        right: -15%;
-        bottom: -500px;
-    }
-}
-
-/* Mobile: up to 767px */
-@media (max-width: 767px) {
-    .herobanner {
-        min-height: 670px;
-        flex-direction: column;
-    }
-
-    .heroLeft{
-        width: 100%;
-        text-align: center;
-    }
-
-    .heroLeft h4 {
-        font-size: 25px;
-    }
-
-    .heroLeft h1 {
-        font-size: 50px;
-        line-height: 70px;
-        font-weight: 700;
-        margin: 15px 0px 15px;
-    }
-
-    .tagline h5 {
-        font-size: 17px;
-    }
-
-    .heroRight img {
-        width: 300px;
-        height: 300px;
-        right: -5%;
-        bottom: -425px;
-    }
-}
-
-
-/* @media(max-width: 1200px) {
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
 
     .herobanner {
-        min-height: 770px;
+        min-height: 785px;
     }
 
-    .heroRight img {
-        bottom: -325px;
-    }
-}
-
-@media(min-width: 1024px) and (max-width: 1200px) {
-    .herobanner {
-        min-height: 770px;
+    .heroImage img {
+        top: 335px;
+        right: -90px;
     }
 }
 
-@media(max-width: 1000px) {
-    .heroLeft {
-        width: 100%;
-        text-align: center;
-    }
-
-    .heroLeft h1 {
-        margin: 15px 0px 30px;
-    }
-
-    .tagline {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .heroRight img {
-        right: -15%;
-        bottom: -500px;
-    }
-}
-
+/*ipad Air portrait*/
 @media(min-width: 768px) and (max-width: 1023px) {
+
     .herobanner {
-        min-height: 940px;
+        min-height: 930px;
+        text-align: center;
+    }
+
+    .tagline {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .herotext2 {
+        display: inline;
+    }
+
+    .heroImage img {
+        width: 70%;
+        top: 600px;
+        right: 75px;
     }
 }
 
-@media(max-width: 767px) and (orientation: portrait) {
-    .heroRight img {
-        right: -10%;
-        bottom: -555px;
-    }
-}
-
-@media(max-width: 767px) {
-
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
     .herobanner {
-        min-height: 670px;
+        /* min-height: 695px; */
+        min-height: 600px;
+        /* text-align: center; */
     }
 
-    .heroLeft h4 {
-        font-size: 25px;
-    }
-
-    .heroLeft h1 {
+    .herobanner h1 {
         font-size: 50px;
         line-height: 70px;
-        font-weight: 700;
+        margin: 15px 0px 25px;
     }
 
-    .tagline h5 {
-        font-size: 17px;
+    .heroImage img {
+        width: 75%;
+        top: 245px;
+        /* right: -40px; */
+        right: -82px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .herobanner {
+        min-height: 780px;
+        text-align: center;
     }
 
-    .heroRight img {
-        width: 300px;
-        height: 300px;
-        right: -5%;
-        bottom: -425px;
+    .herotext2 {
+        display: inline;
     }
-} */
+
+    .herobanner h4 {
+        font-size: 20px;
+    }
+
+    .herobanner h1 {
+        font-size: 50px;
+        line-height: 70px;
+        margin: 15px 0px 55px;
+    }
+
+    .tagtext2 {
+        display: inline;
+    }
+
+    .heroImage img {
+        width: 100%;
+        /* top: 560px; */
+        top: 525px;
+        right: -5px;
+        margin: 0;
+    }
+}

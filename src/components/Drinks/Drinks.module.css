@@ -1,0 +1,76 @@
+.drinks {
+    /* border: 1px solid white; */
+    text-align: center;
+}
+
+.drinksTop {
+    margin: 0px 0px 60px;
+}
+
+.descriptionText1 {
+    margin: 25px 0px 50px;
+}
+
+.descriptionText2 {
+    display: block;
+}
+
+.drinksBottom {
+    display: flex;
+    gap: 45px;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .drinksBottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .drinksBottom {
+        flex-direction: column;
+    }
+}
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .drinksBottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+
+    .descriptionText2 {
+        display: inline;
+    }
+
+    .drinksBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .descriptionText2 {
+        display: inline;
+    }
+
+    .drinksBottom {
+        flex-direction: column;
+    }
+}

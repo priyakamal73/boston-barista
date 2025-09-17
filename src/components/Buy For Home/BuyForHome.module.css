@@ -1,0 +1,130 @@
+.buyForHome {
+    display: flex;
+    gap: 10px;
+    border: 1px solid red;
+    background: linear-gradient(45deg, #A77443 0%, #C39868 100%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 80px 80px -60px rgba(0, 0, 0, 0.6);
+    padding: 0px 20px 0px;
+}
+
+.buyForHome:hover {
+    background: linear-gradient(45deg, #A77443 0%, #C9A276 100%);
+}
+
+.buyForHomeLeft img {
+    width: 100%;
+}
+
+.buyForHomeRight {
+    /* border: 1px solid white; */
+    padding: 50px 20px;
+}
+
+.buyForHomeRight h5 {
+    color: #D6C1B5;
+    margin: 0px 0px 20px;
+}
+
+.buyForHomeRight h4 {
+    margin: 40px 0px 25px;
+}
+
+.buyForHometext1 {
+    margin: 0px 0px 50px;
+}
+
+.buyForHometext2 {
+    display: block;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .buyForHomeLeft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .buyForHomeLeft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buyForHometext2 {
+        display: inline;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+    .buyForHome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buyForHomeLeft img {
+        padding: 0px 0px 0px 30px;
+    }
+
+    .buyForHomeRight {
+        text-align: center;
+        padding: 0px 20px 50px;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .buyForHome {
+        flex-direction: column;
+        padding: 0px 20px 30px;
+    }
+
+    .buyForHomeLeft {
+        padding: 20px 0px 0px 55px;
+    }
+
+    .buyForHomeRight {
+        text-align: center;
+        padding: 0;
+    }
+
+    .buyForHomeRight h5{
+        margin: 0;
+    }
+
+    .buyForHomeRight h4{
+        margin: 30px 0px 25px;
+    }
+
+    .buyForHometext2 {
+        display: block;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .buyForHome {
+        flex-direction: column;
+        padding: 0px 20px 30px;
+    }
+
+    .buyForHomeLeft {
+        padding: 20px 0px 0px 20px;
+    }
+
+    .buyForHomeRight {
+        text-align: center;
+        padding: 0;
+    }
+
+    .buyForHometext2 {
+        display: inline;
+    }
+}

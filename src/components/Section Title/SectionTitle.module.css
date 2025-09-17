@@ -1,0 +1,71 @@
+.SectionTitle h2 {
+    margin: 0px 0px 25px;
+    text-transform: capitalize;
+}
+
+
+.SectionTitle hr {
+    margin: 0 auto;
+}
+
+/* Variants */
+.center hr {
+    width: 5%;
+    margin: 0 auto;
+}
+
+.left hr {
+    width: 15%;
+    margin: 0;
+}
+
+.full hr {
+    width: 100%;
+    margin: 0;
+}
+
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+
+    .left hr,
+    .center hr {
+        width: 10%;
+        margin: 0 auto;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .SectionTitle h2 {
+        font-size: 40px;
+    }
+
+    .left hr,
+    .center hr {
+        width: 10%;
+        margin: 0 auto;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .SectionTitle h2 {
+        font-size: 40px;
+    }
+
+    .left hr,
+    .center hr {
+        width: 10%;
+        margin: 0 auto;
+    }
+}

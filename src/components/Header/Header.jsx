@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 import logo from "../../../public/logo.jpg";
-import MobileMenu from "../MobilemMenu/MobileMenu";
+import MobileMenu from "../Mobile Menu/MobileMenu";
 import Hamburger from "hamburger-react";
 
 const Header = () => {
