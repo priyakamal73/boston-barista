@@ -1,0 +1,172 @@
+.about {
+    /* border: 1px solid white; */
+    padding: 0px 90px 0px;
+}
+
+.aboutTop {
+    /* border: 1px solid black; */
+    margin: 0px 0px 70px;
+}
+
+.aboutText1 {
+    text-align: center;
+    margin: 30px 0px 0px;
+}
+
+.aboutText2 {
+    display: block;
+}
+
+.aboutBottom {
+    display: flex;
+    padding: 0px 50px 0px;
+}
+
+.tailorMadeCoffee {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tailorMadeCoffee h6 {
+    margin: 0px 0px 25px;
+}
+
+span {
+    display: block;
+}
+
+.aboutDescription {
+    width: 50%;
+}
+
+.aboutDescription h5 {
+    margin: 0px 0px 20px;
+}
+
+.aboutDescriptionText {
+    margin: 15px 10px 30px 0px;
+}
+
+.aboutDescription a {
+    margin: 55px 0px 0px;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .about {
+        padding: 0px 65px 0px;
+    }
+
+    .aboutBottom {
+        padding: 0;
+        gap: 25px;
+    }
+
+    .tailorMadeCoffee{
+        justify-content: start;
+    }
+
+    .tailorMadeCoffee h3 {
+        line-height: 70px;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+    .about {
+        padding: 0;
+    }
+
+    .aboutTop {
+        margin: 0px 0px 30px;
+    }
+
+    .aboutBottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .tailorMadeCoffee,
+    .aboutDescription {
+        width: 100%;
+    }
+
+    .tailorMadeCoffee h3 {
+        line-height: 75px;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .about {
+        padding: 0;
+    }
+
+    .aboutTop {
+        margin: 0px 0px 30px;
+    }
+
+    .aboutText2 {
+        display: inline;
+    }
+
+    .aboutText2 {
+        display: inline;
+    }
+
+    .aboutBottom {
+        flex-direction: column;
+        padding: 0px 35px 0px;
+        gap: 40px;
+    }
+
+    .tailorMadeCoffee,
+    .aboutDescription {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tailorMadeCoffee h3 {
+        font-size: 35px;
+        line-height: 55px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .about {
+        padding: 100px 0px 0px;
+    }
+
+    .aboutTop {
+        margin: 0px 0px 30px;
+    }
+
+    .aboutText2 {
+        display: inline;
+    }
+
+    .aboutBottom {
+        padding: 0;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .tailorMadeCoffee,
+    .aboutDescription {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tailorMadeCoffee h3 {
+        line-height: 55px;
+        font-size: 32px;
+    }
+}

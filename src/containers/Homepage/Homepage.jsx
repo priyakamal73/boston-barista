@@ -5,6 +5,7 @@ import Herobanner from "../../components/Herobanner/Herobanner";
 import Drinks from "../../components/Drinks/Drinks";
 import Croissants from "../../components/Croissants/Croissants";
 import BuyForHome from "../../components/Buy For Home/BuyForHome";
+import About from "../../components/About/About";
 import Footer from "../../components/Footer/Footer";
 
 const Homepage = () => {
@@ -32,6 +33,13 @@ const Homepage = () => {
       <div className={styles.buyForHome}>
         <div className="container">
           <BuyForHome />
+        </div>
+      </div>
+
+      <div className={styles.aboutBg}>
+        <div className="container">
+          <About />
+          <Footer />
         </div>
       </div>
     </>

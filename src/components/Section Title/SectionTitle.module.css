@@ -14,9 +14,17 @@
     margin: 0 auto;
 }
 
+.center h2 {
+    text-align: center;
+}
+
 .left hr {
     width: 15%;
     margin: 0;
+}
+
+.left h2 {
+    text-align: left;
 }
 
 .full hr {
@@ -30,9 +38,7 @@
 
 /*ipad air landscape*/
 /*ipad pro portrait*/
-@media(min-width: 1024px) and (max-width: 1180px) {
-
-}
+@media(min-width: 1024px) and (max-width: 1180px) {}
 
 /*ipad Air portrait*/
 @media(min-width: 768px) and (max-width: 1023px) {
@@ -42,18 +48,29 @@
         width: 10%;
         margin: 0 auto;
     }
+
+    .center h2,
+    .left h2 {
+        text-align: center;
+    }
 }
 
 /*mobile landscape*/
 @media(min-width: 667px) and (max-width: 767px) {
     .SectionTitle h2 {
         font-size: 40px;
+        margin: 0   ;
     }
 
     .left hr,
     .center hr {
         width: 10%;
         margin: 0 auto;
+    }
+
+    .center h2,
+    .left h2 {
+        text-align: center;
     }
 }
 
@@ -67,5 +84,10 @@
     .center hr {
         width: 10%;
         margin: 0 auto;
+    }
+
+    .center h2,
+    .left h2 {
+        text-align: center;
     }
 }

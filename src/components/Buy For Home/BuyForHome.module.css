@@ -83,6 +83,7 @@
 @media(min-width: 667px) and (max-width: 767px) {
     .buyForHome {
         flex-direction: column;
+        margin: 115px 0px 0px;
         padding: 0px 20px 30px;
     }
 

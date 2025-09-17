@@ -58,6 +58,8 @@
 
     .croissantsRight {
         padding: 0px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -72,13 +74,23 @@
         padding: 115px 0px 0px 0px;
     }
 
+    .croissantsLeft h5 {
+        margin: 0;
+    }
+
+    .croissantsLeft h4 {
+        margin: 35px 0px 20px;
+    }
+
     .croissantsRight {
         padding: 30px 0px 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .croissantsRight img {
         width: 80%;
-        padding: 0px 0px 0px 30px;
+        /* padding: 0px 0px 0px 30px; */
     }
 }
 
