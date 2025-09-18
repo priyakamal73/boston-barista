@@ -81,6 +81,18 @@ textarea {
     font-family: "Montserrat", sans-serif;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /*mobile landscape*/
 @media(min-width: 667px) and (max-width: 767px) {
     .section {
@@ -103,7 +115,7 @@ textarea {
         line-height: 50px;
     }
 
-    h3{
+    h3 {
         font-size: 30px;
     }
 
