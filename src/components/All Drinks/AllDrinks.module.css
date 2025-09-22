@@ -1,0 +1,93 @@
+.menuDrinks {
+    text-align: center;
+}
+
+.menuDrinksTop {
+    margin: 0px 0px 60px;
+}
+
+.menuDescriptionText1 {
+    margin: 25px 0px 50px;
+}
+
+.menuDescriptionText2 {
+    display: block;
+}
+
+.menuDrinksRow1 {
+    display: flex;
+    gap: 30px;
+    margin: 0px 0px 30px;
+}
+
+.menuDrinksRow2 {
+    display: flex;
+    gap: 30px;
+    /* margin: 0px 0px 30px; */
+}
+
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+
+    .menuDrinksRow1,
+    .menuDrinksRow2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+
+    .menuDrinksRow1,
+    .menuDrinksRow2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+
+    .menuDrinksRow1,
+    .menuDrinksRow2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+
+    .menuDescriptionText2 {
+        display: inline;
+    }
+
+    .menuDrinksRow1,
+    .menuDrinksRow2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .menuDescriptionText2 {
+        display: inline;
+    }
+
+    .menuDrinksRow1,
+    .menuDrinksRow2 {
+        flex-direction: column;
+    }
+}

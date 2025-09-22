@@ -1,0 +1,74 @@
+.menuBg {
+  background-image: url('../../assets/menuBg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menuDrinksBg {
+  background-image: url('../../assets/drinksBg.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.coffeeForHomeBg {
+  background-image: url('../../assets/croissantBg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menuPageTitle {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+  .menuPageTitle {
+    padding: 50px 0px;
+  }
+}
+
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .menuPageTitle {
+    padding: 50px 0px;
+  }
+}
+
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {}
+
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+  .menuPageTitle {
+    padding: 20px 0px;
+  }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+  .menuPageTitle {
+    padding: 20px 0px;
+  }
+}

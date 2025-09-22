@@ -1,17 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Homepage from "./containers/Homepage/Homepage";
-import './App.css'
+import Menu from "./containers/Menu/Menu";
+import ScrollToTop from "./components/Scroll To Top/ScrollToTop";
+import "./App.css";
 
-
-const App = () =>{
-  return(
+const App = () => {
+  return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Homepage />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
-export default App
+export default App;

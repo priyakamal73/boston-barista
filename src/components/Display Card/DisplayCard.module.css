@@ -17,20 +17,21 @@
     transition: all 0.3s ease;
 }
 
-.card img {
+.homeCard h3 {
+    text-transform: capitalize
+}
+
+.homeCard img {
     width: 100%;
     margin: 0px 0px 15px;
 }
 
-.card h3 {
-    text-transform: capitalize
-}
 
-.card p {
+.homeCard p {
     margin: 20px 0px 40px;
 }
 
-.card button {
+.homeCard button {
     width: 100%;
     border: none;
     border-radius: 10px 10px 10px 10px;
@@ -42,13 +43,12 @@
     transition: all 0.3s linear;
 }
 
-.card button:hover {
+.homeCard button:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.65);
 }
 
-
-.card button a {
+.homeCard button a {
     text-decoration: none;
     color: black;
     font-family: "Montserrat", sans-serif;
@@ -56,6 +56,21 @@
     letter-spacing: 1px;
     font-weight: 500;
     text-transform: capitalize;
+}
+
+.menuCard {
+    width: 25%; 
+    height: 25%;
+}
+
+.menuCard img {
+    /* width: 75%; */
+    margin: 0px 0px 20px;
+}
+
+.menuCard h4 {
+    text-transform: capitalize;
+    margin: 12px 0px 20px;
 }
 
 /*ipad pro landscape*/
@@ -66,11 +81,19 @@
 @media(min-width: 1024px) and (max-width: 1180px) {
     .card {
         padding: 35px 15px 40px;
+        /* width: 55%; */
+    }
+
+    .homeCard{
         width: 55%;
     }
 
-    .card button {
+    .homeCard button {
         width: 85%;
+    }
+
+    .menuCard{
+        width: 50%;
     }
 
 }
@@ -81,8 +104,12 @@
         padding: 35px 15px 40px;
     }
 
-    .card button {
+    .homeCard button {
         width: 85%;
+    }
+
+    .menuCard{
+        width: 55%;
     }
 }
 
@@ -99,22 +126,26 @@
         width: 55%;
     }
 
-    .card h4 {
+    .homeCard h4 {
         font-size: 28px;
     }
 
-    .card h3 {
+    .homeCard h3 {
         font-size: 30px;
     }
 }
 
 /*mobile portrait*/
 @media(max-width: 666px) {
-    .card h4 {
+    .homeCard h4 {
         font-size: 28px;
     }
 
-    .card h3 {
+    .homeCard h3 {
         font-size: 30px;
+    }
+
+    .menuCard{
+        width: 100%;
     }
 }

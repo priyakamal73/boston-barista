@@ -1,0 +1,78 @@
+.coffeeForHome {
+    padding: 115px 0px 0px;
+    text-align: center;
+}
+
+.coffeeForHomeText1 {
+    margin: 30px 0px 0px;
+}
+
+.coffeeCards {
+    display: flex;
+    gap: 30px;
+    margin: 70px 0px 120px;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+
+    .coffeeCards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+
+    .coffeeCards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coffeeForHomeText2{
+        display: inline;
+    }
+}
+
+/*Iphone XR landscape*/
+@media(min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+
+    .coffeeCards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+
+    .coffeeForHomeText2 {
+        display: inline;
+    }
+
+    .coffeeCards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .coffeeForHomeText2 {
+        display: inline;
+    }
+
+    .coffeeCards {
+        flex-direction: column;
+    }
+}
