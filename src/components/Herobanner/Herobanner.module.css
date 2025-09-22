@@ -61,7 +61,7 @@
 @media(min-width: 768px) and (max-width: 1023px) {
 
     .herobanner {
-        min-height: 930px;
+        min-height: 1030px;
         text-align: center;
     }
 
@@ -76,7 +76,8 @@
 
     .heroImage img {
         width: 70%;
-        top: 600px;
+        /* top: 600px; */
+        top: 715px;
         right: 75px;
     }
 }

@@ -4,13 +4,9 @@
 }
 
 
-.SectionTitle hr {
-    margin: 0 auto;
-}
-
-/* Variants */
 .center hr {
-    width: 5%;
+    width: 50px;
+    border: 1px solid white;
     margin: 0 auto;
 }
 
@@ -19,7 +15,8 @@
 }
 
 .left hr {
-    width: 15%;
+    width: 50px;
+    border: 1px solid white;
     margin: 0;
 }
 
@@ -59,7 +56,7 @@
 @media(min-width: 667px) and (max-width: 767px) {
     .SectionTitle h2 {
         font-size: 40px;
-        margin: 0   ;
+        margin: 0;
     }
 
     .left hr,

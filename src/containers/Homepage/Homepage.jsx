@@ -7,18 +7,19 @@ import Drinks from "../../components/Drinks/Drinks";
 import Croissants from "../../components/Croissants/Croissants";
 import BuyForHome from "../../components/Buy For Home/BuyForHome";
 import About from "../../components/About/About";
+import BaristaParty from "../../components/Barista Paty/BaristaParty";
 import Footer from "../../components/Footer/Footer";
 
 const Homepage = () => {
   useEffect(() => {
-    const hiddenSections = document.querySelectorAll(".hidden");
+    const hiddenSections = document.querySelectorAll(`.${styles.hidden}`);
     if (!hiddenSections) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("show");
+            entry.target.classList.add(styles.show);
             observer.unobserve(entry.target);
           }
         });
@@ -34,35 +35,44 @@ const Homepage = () => {
   return (
     <>
       <div className={styles.background}>
-        <div className={`hidden container`}>
+        <div className={`${styles.hidden} container`}>
           <Header />
           <Herobanner />
         </div>
       </div>
 
       <div className={styles.drinksBg}>
-        <div className={`hidden container`}>
+        <div className={`${styles.hidden} container`}>
           <Drinks />
         </div>
       </div>
 
       <div className={styles.croissantBg}>
-        <div className={`hidden container`}>
+        <div className={`${styles.hidden} container`}>
           <Croissants />
         </div>
       </div>
 
       <div className={styles.buyForHome}>
-        <div className={`hidden container`}>
+        <div className={`${styles.hidden} container`}>
           <BuyForHome />
         </div>
       </div>
 
       <div className={styles.aboutBg}>
-        <div className={`hidden container`}>
+        <div className={`${styles.hidden} container`}>
           <About />
-          <Footer />
         </div>
+      </div>
+
+      <div className={styles.partyBg}>
+        <div className={`${styles.hidden} container`}>
+          <BaristaParty />
+        </div>
+      </div>
+
+      <div className={`${styles.hidden} container`}>
+        <Footer />
       </div>
     </>
   );

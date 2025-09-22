@@ -1,0 +1,387 @@
+.BaristaParty {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 80px 80px -60px rgba(0, 0, 0, 0.6);
+}
+
+.partyLeft {
+    width: 65%;
+    padding: 0px 0px 0px 50px;
+    background: linear-gradient(45deg, #A77443 0%, #C39868 100%);
+    border-radius: 20px 0 0 20px;
+}
+
+.partyLeft:hover {
+    background: linear-gradient(45deg, #A77443 0%, #C9A276 100%);
+}
+
+.partyDetails {
+    display: flex;
+    gap: 10px;
+}
+
+.partyText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.partyText hr {
+    width: 50px;
+    border: 1px solid white;
+    margin: 0;
+}
+
+.partyText h4,
+.partyText p {
+    margin: 0;
+}
+
+.partyImage img {
+    position: relative;
+    z-index: 1;
+}
+
+.partyRight {
+    width: 35%;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(45deg, #C19768 0%, #4F8D81 100%);
+    padding: 50px 50px 40px;
+}
+
+.partyRight h3 {
+    margin: 0px 0px 25px;
+}
+
+.partyRight p {
+    margin: 30px 0px 30px;
+}
+
+.address {
+    display: flex;
+    gap: 10px;
+}
+
+.addressLeft i {
+    font-size: 30px;
+}
+
+.partyRight a {
+    margin: 60% 0% 0%;
+}
+
+.contactLink {
+    display: flex;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .partyImage img {
+        width: 550px;
+        height: 550px;
+    }
+
+    .partyRight a {
+        margin: 45% 0% 0%;
+    }
+}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    /* .partyImage img{
+        width: 500px;
+        height: 600px;
+    } */
+
+    .BaristaParty {
+        flex-direction: column;
+        /* border: 1px solid white; */
+    }
+
+    .partyDetails {
+        flex-direction: column;
+    }
+
+    .partyLeft,
+    .partyRight {
+        width: 94.8%;
+        padding: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .partyLeft {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .partyRight {
+        border-radius: 0 0 20px 20px;
+        height: 300px;
+    }
+
+    .partyText h2 {
+        margin: 0px 0px 25px;
+    }
+
+    .partyText hr {
+        margin: 0 auto;
+    }
+
+    .partyText h4 {
+        margin: 30px 0px 25px;
+    }
+
+    .partyText p {
+        margin: 0px 0px 25px;
+    }
+
+    .partyDesc2 {
+        display: block;
+    }
+
+    .partyImage img {
+        width: 75%
+    }
+
+    .address {
+        justify-content: center;
+    }
+
+    .partyRight p {
+        margin: 15px 0px 30px;
+    }
+
+    .partyRight a {
+        margin: 0 auto;
+    }
+
+    .contactLink {
+        justify-content: center;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+    .BaristaParty {
+        flex-direction: column;
+        /* border: 1px solid white; */
+    }
+
+    .partyDetails {
+        flex-direction: column;
+    }
+
+    .partyLeft,
+    .partyRight {
+        width: 93.5%;
+        padding: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .partyLeft {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .partyRight {
+        border-radius: 0 0 20px 20px;
+        height: 300px;
+    }
+
+    .partyText h2 {
+        margin: 0px 0px 25px;
+    }
+
+    .partyText hr {
+        margin: 0 auto;
+    }
+
+    .partyText h4 {
+        margin: 30px 0px 25px;
+    }
+
+    .partyText p {
+        margin: 0px 0px 25px;
+    }
+
+    .partyDesc2 {
+        display: block;
+    }
+
+    .partyImage img {
+        width: 100%
+    }
+
+    .address {
+        justify-content: center;
+    }
+
+    .partyRight p {
+        margin: 15px 0px 30px;
+    }
+
+    .partyRight a {
+        margin: 0 auto;
+    }
+
+    .contactLink {
+        justify-content: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .BaristaParty {
+        flex-direction: column;
+    }
+
+    .partyLeft,
+    .partyRight {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .partyLeft {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .partyRight {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .partyDetails {
+        flex-direction: column;
+    }
+
+    .partyImage img {
+        width: 100%;
+    }
+
+    .partyText {
+        margin: 0px 0px 20px;
+    }
+
+    .partyText h2 {
+        margin: 20px 0px 20px;
+    }
+
+    .partyText hr {
+        margin: 0 auto;
+    }
+
+    .partyText h4 {
+        margin: 20px 0px 20px;
+    }
+
+    .partyText p {
+        padding: 0px 18px 0px;
+        margin: 0px 0px 20px;
+    }
+
+    .contactLink {
+        justify-content: center;
+    }
+
+    .partyRight hr {
+        width: 85%;
+    }
+
+    .address {
+        flex-direction: column;
+        margin: 20px 0px 0px;
+    }
+
+    .partyRight p {
+        padding: 0px 18px 0px;
+        margin: 15px 0px 0px;
+    }
+
+    .partyRight a {
+        margin: 20px 0px 30px;
+    }
+
+    .partyDesc2 {
+        display: inline;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .BaristaParty {
+        flex-direction: column;
+    }
+
+    .partyLeft,
+    .partyRight {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .partyLeft {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .partyRight {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .partyDetails {
+        flex-direction: column;
+    }
+
+    .partyImage img {
+        width: 100%;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .partyText {
+        margin: 0px 0px 20px;
+    }
+
+    .partyText h2 {
+        margin: 20px 0px 20px;
+    }
+
+    .partyText hr {
+        margin: 0 auto;
+    }
+
+    .partyText h4 {
+        margin: 20px 0px 20px;
+        padding: 0px 10px 0px;
+    }
+
+    .partyText p {
+        padding: 0px 18px 0px;
+        margin: 0px 0px 20px;
+    }
+
+    .contactLink {
+        justify-content: center;
+    }
+
+    .partyRight hr {
+        width: 85%;
+    }
+
+    .address {
+        flex-direction: column;
+    }
+
+    .partyRight p {
+        padding: 0px 18px 0px;
+    }
+
+    .partyRight a {
+        margin: 20px 0px 30px;
+    }
+
+    .partyDesc2{
+        display: inline;
+    }
+
+}

@@ -1,0 +1,113 @@
+.footer {
+    /* border: 1px solid white; */
+    margin: 30px 0px 0px;
+    padding: 0px 113px 0px;
+}
+
+.footerContent {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 45px 0px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs {
+    width: 30%;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.copyrights {
+    text-align: center;
+    padding: 40px 0px 40px;
+}
+
+.copyrights p {
+    color: white;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .footerContent {
+        gap: 30px;
+    }
+
+    .aboutUs {
+        width: 50%;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+    .footerContent {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .aboutUs,
+    .contact,
+    .openingHours {
+        width: 100%;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .footer {
+        padding: 0;
+        margin: 70px 0px 0px;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .aboutUs,
+    .contact,
+    .openingHours {
+        width: 100%;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .footer {
+        padding: 0;
+        margin: 50px 0px 0px;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .aboutUs,
+    .contact,
+    .openingHours {
+        width: 100%;
+    }
+}

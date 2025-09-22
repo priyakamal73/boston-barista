@@ -36,6 +36,25 @@
   padding: 10px 0px 0px;
 }
 
+.partyBg {
+  background-image: url('../../assets/baristaPartyBg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 0px 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*ipad pro landscape*/
 @media(min-width: 1181px) and (max-width: 1400px) {}
 
@@ -47,7 +66,7 @@
 /*ipad Air portrait*/
 @media(min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   .background::before {
-    background-size: 100% 85%;
+    background-size: 100% auto;
   }
 }
 
@@ -63,14 +82,18 @@
 /*mobile landscape*/
 @media(min-width: 667px) and (max-width: 767px) {
   .background::before {
-    background-size: auto 100%;
+    background-size: auto 6%;
+  }
+
+  .partyBg {
+    margin: 115px 0px 0px;
   }
 }
 
 /*mobile portrait*/
 @media(max-width: 666px) {
   .background::before {
-    background-size: 100% 100%;
+    background-size: auto;
   }
 
   .drinksBg {
@@ -79,5 +102,10 @@
 
   .buyForHome {
     padding: 115px 0px 0px 0px;
+  }
+
+  .partyBg {
+    margin: 115px 0px 0px 0px;
+    background-size: cover;
   }
 }

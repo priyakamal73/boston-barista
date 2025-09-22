@@ -81,29 +81,20 @@ textarea {
     font-family: "Montserrat", sans-serif;
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 /*mobile landscape*/
 @media(min-width: 667px) and (max-width: 767px) {
     .section {
         margin: 0px;
     }
 
+    h2{
+        font-size: 40px;
+    }
+
     h4 {
         font-size: 28px;
     }
 }
-
 
 /*mobile portrait*/
 @media(max-width: 666px) {
@@ -112,6 +103,7 @@ textarea {
     }
 
     h2 {
+        font-size: 40px;
         line-height: 50px;
     }
 
