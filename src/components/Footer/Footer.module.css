@@ -31,7 +31,11 @@
 }
 
 /*ipad pro landscape*/
-@media(min-width: 1181px) and (max-width: 1400px) {}
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .footer {
+        padding: 0;
+    }
+}
 
 /*ipad air landscape*/
 /*ipad pro portrait*/
@@ -41,12 +45,20 @@
     }
 
     .aboutUs {
-        width: 50%;
+        width: 30%;
+    }
+
+    .footer {
+        padding: 0;
     }
 }
 
 /*ipad Air portrait*/
 @media(min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        padding: 0;
+    }
+
     .footerContent {
         flex-direction: column;
         gap: 40px;

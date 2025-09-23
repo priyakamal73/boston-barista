@@ -1,0 +1,129 @@
+.coffeeOffering {
+    margin: 0px 100px 100px;
+}
+
+.coffeeOffering hr {
+    width: 50px;
+    border: 1px solid white;
+    margin: 30px 0px;
+}
+
+.coffeeofferingText {
+    margin: 0px 0px 30px;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .coffeeOffering {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .coffeeOffering hr {
+        margin: 0 auto;
+        width: 10%;
+    }
+
+    .coffeeOffering h3 {
+        margin: 0px 0px 30px;
+    }
+
+    .coffeeofferingText {
+        margin: 30px 0px;
+    }
+
+    .galleryLink {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .coffeeOffering {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .coffeeOffering hr {
+        margin: 0 auto;
+        width: 10%;
+    }
+
+    .coffeeOffering h3 {
+        margin: 0px 0px 30px;
+    }
+
+    .coffeeofferingText {
+        margin: 30px 0px;
+    }
+
+    .galleryLink {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+    .coffeeOffering {
+        text-align: center;
+        margin: 20px 30px 70px;
+    }
+
+    .coffeeOffering hr {
+        margin: 0 auto;
+        width: 10%;
+    }
+
+    .coffeeOffering h3 {
+        margin: 0px 0px 30px;
+    }
+
+    .coffeeofferingText {
+        margin: 30px 0px;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .coffeeOffering {
+        margin: 70px 0px 30px;
+        text-align: center;
+    }
+
+    .coffeeOffering hr {
+        margin: 0 auto;
+        width: 15%;
+    }
+
+    .coffeeOffering h3 {
+        margin: 0px 0px 30px;
+    }
+
+    .coffeeofferingText {
+        margin: 30px 0px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .coffeeOffering {
+        margin: 70px 0px 30px;
+        text-align: center;
+    }
+
+    .coffeeOffering hr {
+        margin: 0 auto;
+        width: 15%;
+    }
+
+    .coffeeOffering h3 {
+        margin: 0px 0px 30px;
+    }
+
+    .coffeeofferingText {
+        margin: 30px 0px;
+    }
+}

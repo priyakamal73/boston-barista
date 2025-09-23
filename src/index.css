@@ -87,8 +87,9 @@ textarea {
         margin: 0px;
     }
 
-    h2{
+    h2 {
         font-size: 40px;
+        line-height: 60px;
     }
 
     h4 {
@@ -104,14 +105,19 @@ textarea {
 
     h2 {
         font-size: 40px;
-        line-height: 50px;
+        line-height: 55px;
     }
 
     h3 {
         font-size: 30px;
+        line-height: 45px;
     }
 
     h4 {
         font-size: 28px;
+    }
+
+    p{
+        font-size: 13px;
     }
 }

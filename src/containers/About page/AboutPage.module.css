@@ -1,0 +1,39 @@
+.aboutBg {
+    background-image: url('../../assets/menuBg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.magnaBg {
+    background-image: url('../../assets/aboutBg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px 0px 1px;
+}
+
+.aboutPageTitle {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.aboutGalleryBg {
+    background-image: url('../../assets/baristaPartyBg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 0px 20px;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

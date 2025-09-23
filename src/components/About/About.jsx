@@ -44,7 +44,7 @@ const About = () => {
             Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
-          <Links to="/aboutUs" name="read more" align="left" />
+          <Links to="/about" name="read more" align="left" />
         </div>
       </div>
     </div>

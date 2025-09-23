@@ -76,6 +76,10 @@
 
 /*ipad pro landscape*/
 @media(min-width: 1181px) and (max-width: 1400px) {
+    .BaristaParty {
+        padding: 85px 0px 0px;
+    }
+
     .partyImage img {
         width: 550px;
         height: 550px;
@@ -89,14 +93,13 @@
 /*ipad air landscape*/
 /*ipad pro portrait*/
 @media(min-width: 1024px) and (max-width: 1180px) {
-    /* .partyImage img{
-        width: 500px;
-        height: 600px;
-    } */
 
     .BaristaParty {
         flex-direction: column;
-        /* border: 1px solid white; */
+        padding: 50px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
     }
 
     .partyDetails {
@@ -105,7 +108,8 @@
 
     .partyLeft,
     .partyRight {
-        width: 94.8%;
+        /* width: 94.8%; */
+        width: 80%;
         padding: 0;
         text-align: center;
         padding: 20px;
@@ -380,7 +384,7 @@
         margin: 20px 0px 30px;
     }
 
-    .partyDesc2{
+    .partyDesc2 {
         display: inline;
     }
 
