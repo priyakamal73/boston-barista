@@ -1,0 +1,217 @@
+.contactForm {
+    padding: 0px 30px 0px;
+    display: flex;
+}
+
+.contactDetails,
+.form {
+    width: 50%;
+}
+
+.contactDetails p {
+    margin: 20px 0px;
+}
+
+.phone,
+.email,
+.location {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone i {
+    transform: scaleX(-1);
+}
+
+.phone p,
+.email p,
+.location p {
+    margin: 10px 0px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.email p:hover {
+    cursor: pointer;
+    color: #FFFFFFA6;
+}
+
+.names {
+    display: flex;
+    gap: 1rem;
+}
+
+
+:global(.ant-input),
+:global(.ant-input-affix-wrapper),
+:global(.ant-input-textarea) {
+    border-radius: 2px !important;
+    padding: 12px 14px !important;
+    font-size: 16px;
+}
+
+:global(.ant-btn) {
+    border: none !important;
+    background-color: white;
+    padding: 25px 50px !important;
+    border-radius: 5px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black !important;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+:global(.ant-btn:hover) {
+    background-color: #FFFFFFA6 !important;
+}
+
+:global(.ant-input::placeholder),
+:global(.ant-input-textarea textarea::placeholder) {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+:global(.ant-form-item-explain) {
+    margin: 2px 0px 5px;
+}
+
+:global(.ant-form-item-explain-error) {
+    color: #FFFFFFA6 !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.googleMap {
+    margin: 100px 0px 0px;
+}
+
+/*ipad pro landscape*/
+@media(min-width: 1181px) and (max-width: 1400px) {
+    .contactForm {
+        padding: 0;
+    }
+}
+
+
+/*ipad air landscape*/
+/*ipad pro portrait*/
+@media(min-width: 1024px) and (max-width: 1180px) {
+    .contactForm {
+        gap: 30px;
+        padding: 0;
+    }
+
+    .contactDetails span {
+        display: inline;
+    }
+}
+
+/*ipad Air portrait*/
+@media(min-width: 768px) and (max-width: 1023px) {
+
+    .contactForm {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contactDetails,
+    .form {
+        text-align: center;
+        width: 100%;
+    }
+
+    .phone,
+    .email,
+    .location {
+        justify-content: center;
+    }
+}
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+    .contactForm {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contactDetails,
+    .form {
+        text-align: center;
+        width: 100%;
+    }
+
+    .phone,
+    .email,
+    .location {
+        justify-content: center;
+    }
+
+    :global(.ant-input::placeholder),
+    :global(.ant-input-textarea textarea::placeholder) {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    :global(.ant-input),
+    :global(.ant-input-affix-wrapper),
+    :global(.ant-input-textarea) {
+        padding: 10px !important;
+        font-size: 12px;
+    }
+
+    :global(.ant-btn) {
+        font-size: 12px;
+        padding: 25px 60px !important;
+        margin: 20px 0px 0px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+    .contactForm {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contactDetails,
+    .form {
+        text-align: center;
+        width: 100%;
+    }
+
+    .phone,
+    .email,
+    .location {
+        justify-content: center;
+    }
+
+    .names {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    :global(.ant-input::placeholder),
+    :global(.ant-input-textarea textarea::placeholder) {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    :global(.ant-input),
+    :global(.ant-input-affix-wrapper),
+    :global(.ant-input-textarea) {
+        padding: 10px !important;
+        font-size: 12px;
+    }
+
+    :global(.ant-btn) {
+        font-size: 12px;
+        padding: 20px 60px !important;
+        margin: 20px 0px 0px;
+    }
+}

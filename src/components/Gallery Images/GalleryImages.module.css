@@ -1,0 +1,92 @@
+.galleryImages img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.galleryTop {
+    display: flex;
+    gap: 20px;
+}
+
+.galleryBg {
+    background-image: url('../../assets/baristaPartyBg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 0px 80px;
+}
+
+.galleryBottom {
+    margin: 100px 0px 0px;
+}
+
+.galleryBottom1,
+.galleryBottom2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.galleryBottom1 img,
+.galleryBottom2 img {
+    width: 27%;
+}
+
+.galleryBottom2 {
+    margin: 20px 0px 0px;
+}
+
+
+/*mobile landscape*/
+@media(min-width: 667px) and (max-width: 767px) {
+
+    .galleryTop,
+    .galleryBottom1,
+    .galleryBottom2 {
+        flex-direction: column;
+    }
+
+    .galleryBottom {
+        margin: 20px 0px 0px;
+    }
+
+    .galleryImages .image1,
+    .galleryImages .image2,
+    .galleryImages .image3,
+    .galleryBottom1 img,
+    .galleryBottom2 img {
+        width: 100%;
+    }
+
+    .galleryBg {
+        padding: 50px 0px 0px;
+    }
+}
+
+/*mobile portrait*/
+@media(max-width: 666px) {
+
+    .galleryTop,
+    .galleryBottom1,
+    .galleryBottom2 {
+        flex-direction: column;
+    }
+
+    .galleryBottom {
+        margin: 20px 0px 0px;
+    }
+
+    .galleryImages .image1,
+    .galleryImages .image2,
+    .galleryImages .image3,
+    .galleryBottom1 img,
+    .galleryBottom2 img {
+        width: 100%;
+    }
+
+    .galleryBg {
+        padding: 50px 0px 0px;
+    }
+}

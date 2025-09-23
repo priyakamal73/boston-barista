@@ -1,12 +1,11 @@
 import { useEffect } from "react";
-import styles from "./Menu.module.css";
+import styles from "./ContactPage.module.css";
 import "../../index.css";
 import Header from "../../components/Header/Header";
-import AllDrinks from "../../components/All Drinks/AllDrinks";
-import CoffeeForHome from "../../components/Coffee For Home/CoffeeForHome";
+import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 
-const Menu = () => {
+const ContactPage = () => {
   useEffect(() => {
     const hiddenSections = document.querySelectorAll(`.${styles.hidden}`);
     if (!hiddenSections) return;
@@ -30,25 +29,15 @@ const Menu = () => {
 
   return (
     <>
-      <div className={styles.menuBg}>
+      <div className={styles.contactBg}>
         <div className={`${styles.hidden} container`}>
           <Header />
-          <h1 className={styles.menuPageTitle}>
-            Our Menu
-          </h1>
+          <h1 className={styles.contactPageTitle}>Contact</h1>
         </div>
       </div>
 
-      <div className={styles.menuDrinksBg}>
-        <div className={`${styles.hidden} container`}>
-          <AllDrinks />
-        </div>
-      </div>
-
-      <div className={styles.coffeeForHomeBg}>
-        <div className={`${styles.hidden} container`}>
-          <CoffeeForHome />
-        </div>
+      <div className={`${styles.contactContent} ${styles.hidden} container`}>
+        <Contact />
       </div>
 
       <div className={`${styles.hidden} container`}>
@@ -58,4 +47,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default ContactPage;

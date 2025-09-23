@@ -1,12 +1,11 @@
+import styles from "./Gallery.module.css";
 import { useEffect } from "react";
-import styles from "./Menu.module.css";
 import "../../index.css";
 import Header from "../../components/Header/Header";
-import AllDrinks from "../../components/All Drinks/AllDrinks";
-import CoffeeForHome from "../../components/Coffee For Home/CoffeeForHome";
+import GalleryImages from "../../components/Gallery Images/GalleryImages";
 import Footer from "../../components/Footer/Footer";
 
-const Menu = () => {
+const Gallery = () => {
   useEffect(() => {
     const hiddenSections = document.querySelectorAll(`.${styles.hidden}`);
     if (!hiddenSections) return;
@@ -30,25 +29,15 @@ const Menu = () => {
 
   return (
     <>
-      <div className={styles.menuBg}>
+      <div className={styles.galleryBg}>
         <div className={`${styles.hidden} container`}>
           <Header />
-          <h1 className={styles.menuPageTitle}>
-            Our Menu
-          </h1>
+          <h1 className={styles.galleryPageTitle}>Gallery</h1>
         </div>
       </div>
 
-      <div className={styles.menuDrinksBg}>
-        <div className={`${styles.hidden} container`}>
-          <AllDrinks />
-        </div>
-      </div>
-
-      <div className={styles.coffeeForHomeBg}>
-        <div className={`${styles.hidden} container`}>
-          <CoffeeForHome />
-        </div>
+      <div className={`${styles.hidden} container`}>
+        <GalleryImages />
       </div>
 
       <div className={`${styles.hidden} container`}>
@@ -58,4 +47,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Gallery;

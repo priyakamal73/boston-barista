@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Homepage from "./containers/Homepage/Homepage";
 import Menu from "./containers/Menu/Menu";
 import AboutPage from "./containers/About page/AboutPage";
+import Gallery from "./containers/Gallery/Gallery";
+import ContactPage from "./containers/Contact Page/ContactPage";
 import ScrollToTop from "./components/Scroll To Top/ScrollToTop";
 import "./App.css";
 
@@ -14,6 +16,8 @@ const App = () => {
         <Route path="/home" element={<Homepage />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );

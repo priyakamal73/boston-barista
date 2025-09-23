@@ -1,0 +1,22 @@
+.galleryBg {
+    background-image: url('../../assets/menuBg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.galleryPageTitle {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
