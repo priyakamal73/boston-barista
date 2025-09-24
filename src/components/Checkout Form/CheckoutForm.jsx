@@ -164,9 +164,9 @@ const CheckoutForm = () => {
                 rules={[{ required: true, message: "Select a payment method" }]}
               >
                 <Select placeholder="Select Payment Method">
-                  <Select.Option value="upi">UPI</Select.Option>
-                  <Select.Option value="card">Credit/Debit Card</Select.Option>
-                  <Select.Option value="cod">Cash on Delivery</Select.Option>
+                  <Select.Option value="UPI">UPI</Select.Option>
+                  <Select.Option value="Card">Credit/Debit Card</Select.Option>
+                  <Select.Option value="COD">Cash on Delivery</Select.Option>
                 </Select>
               </Form.Item>
 
