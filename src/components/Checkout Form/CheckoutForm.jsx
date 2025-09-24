@@ -166,7 +166,7 @@ const CheckoutForm = () => {
                 <Select placeholder="Select Payment Method">
                   <Select.Option value="UPI">UPI</Select.Option>
                   <Select.Option value="Card">Credit/Debit Card</Select.Option>
-                  <Select.Option value="COD">Cash on Delivery</Select.Option>
+                  <Select.Option value="Cash On Delivery">Cash on Delivery</Select.Option>
                 </Select>
               </Form.Item>
 
