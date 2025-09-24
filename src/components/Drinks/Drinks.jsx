@@ -30,7 +30,7 @@ const Drinks = () => {
             bgColor={"linear-gradient(45deg, #A77443 0%, #C39868 100%)"}
             hoverBgColor={"linear-gradient(45deg, #996335 0%, #CAA57A 100%)"}
             image={product1}
-            price="$ 4.20"
+            price="$ 4.25"
             name="cappuccino"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus."
           />

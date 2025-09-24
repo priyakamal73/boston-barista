@@ -7,6 +7,7 @@ import {
   setCheckoutStatus,
   setCheckoutDetails,
 } from "../../redux/slices/checkoutSlice";
+import emailjs from "emailjs-com";
 
 const CheckoutForm = () => {
   const dispatch = useDispatch();
@@ -19,10 +20,42 @@ const CheckoutForm = () => {
   const capitalizeFirst = (str) =>
     str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
 
-  const handleCheckout = (values) => {
+  const handleCheckout = async (values) => {
     dispatch(setCheckoutStatus(true));
-    const finalValues = { ...values, price: productDetails.price };
+    const finalValues = {
+      ...values,
+      price: productDetails.price,
+      singlePrice: productDetails.singlePrice,
+    };
     dispatch(setCheckoutDetails(finalValues));
+
+    try {
+      await emailjs.send(
+        "service_92agsh9",
+        "template_m0jhnzs",
+        {
+          customerName: finalValues.customerName,
+          email: finalValues.email,
+          price: finalValues.price,
+          order_id: Math.floor(Math.random() * 1000000),
+          orders: [
+            {
+              product: finalValues.product,
+              quantity: finalValues.quantity,
+              address: finalValues.address,
+              phone: finalValues.phone,
+              paymentMethod: finalValues.paymentMethod,
+              singlePrice: finalValues.singlePrice || finalValues.price,
+            },
+          ],
+        },
+        "eUkpqIWqKgo5r0hDV"
+      );
+
+      console.log("Invoice sent to email successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   useEffect(() => {
@@ -34,7 +67,7 @@ const CheckoutForm = () => {
       {checkoutStatus ? (
         <h4 style={{ textAlign: "center", lineHeight: "50px" }}>
           Order placed successfully! <br />
-          Please check your email for the invoice.
+          Please check your email for confirmation details.
         </h4>
       ) : (
         <div className={styles.checkoutForm}>

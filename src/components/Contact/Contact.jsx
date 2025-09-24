@@ -1,9 +1,18 @@
 import styles from "./Contact.module.css";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Alert } from "antd";
+import { useState } from "react";
 
 const Contact = () => {
+  const [form] = Form.useForm();
+  const [success, setSuccess] = useState(false);
+
   const onFinish = (values) => {
     console.log(values);
+
+    setSuccess(true);
+    form.resetFields();
+
+    setTimeout(() => setSuccess(false), 3000);
   };
 
   return (
@@ -33,12 +42,13 @@ const Contact = () => {
 
         <div className={styles.form}>
           <Form
+            form={form} // bind form instance
             name="contact-form"
             onFinish={onFinish}
             layout="vertical"
             style={{ maxWidth: 600 }}
           >
-            <div  className={styles.names}>
+            <div className={styles.names}>
               <Form.Item
                 name="firstName"
                 rules={[{ required: true, message: "First name is required!" }]}
@@ -79,6 +89,16 @@ const Contact = () => {
               </Button>
             </Form.Item>
           </Form>
+
+          {success && (
+            <div style={{ marginTop: "16px" }}>
+              <Alert
+                message="Message sent successfully!"
+                type="success"
+                showIcon
+              />
+            </div>
+          )}
         </div>
       </div>
 
