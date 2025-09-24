@@ -4,6 +4,7 @@ import Menu from "./containers/Menu/Menu";
 import AboutPage from "./containers/About page/AboutPage";
 import Gallery from "./containers/Gallery/Gallery";
 import ContactPage from "./containers/Contact Page/ContactPage";
+import Checkout from "./containers/Checkout/Checkout";
 import ScrollToTop from "./components/Scroll To Top/ScrollToTop";
 import "./App.css";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );

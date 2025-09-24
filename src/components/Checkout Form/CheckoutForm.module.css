@@ -1,0 +1,19 @@
+.checkout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkoutForm {
+  width: 100%;
+  max-width: 600px; 
+  padding: 20px;
+  background: transparent; 
+}
+
+.checkoutDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
