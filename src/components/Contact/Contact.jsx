@@ -93,7 +93,7 @@ const Contact = () => {
           {success && (
             <div style={{ marginTop: "16px" }}>
               <Alert
-                message="Message sent successfully!"
+                message="Thank you for reaching out. Our team will get back to you shortly."
                 type="success"
                 showIcon
               />
