@@ -8,7 +8,6 @@ import galleryImage6 from "../../assets/galleryPage6.jpg";
 import galleryImage7 from "../../assets/galleryPage7.jpg";
 import galleryImage8 from "../../assets/galleryPage8.jpg";
 import galleryImage9 from "../../assets/galleryPage9.jpg";
-import React from "react";
 import { Image } from "antd";
 
 const GalleryImages = () => {

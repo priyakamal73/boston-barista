@@ -74,6 +74,10 @@
     display: flex;
 }
 
+.partyDesc2{
+    display: inline;
+}
+
 /*ipad pro landscape*/
 @media(min-width: 1181px) and (max-width: 1400px) {
     .BaristaParty {

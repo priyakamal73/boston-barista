@@ -12,7 +12,7 @@ const Drinks = () => {
     <>
       <div className={`${styles.drinks}`}>
         <div className={styles.drinksTop}>
-          <SectionTitle title="Drinks" align="center" />
+          <SectionTitle title="Drinks" />
           <p className={styles.descriptionText1}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus,{" "}

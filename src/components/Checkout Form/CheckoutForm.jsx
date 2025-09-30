@@ -78,7 +78,6 @@ const CheckoutForm = () => {
               initialValues={{
                 product: capitalizeFirst(productDetails.name),
                 quantity: productDetails.quantity || 1,
-                price: productDetails.price,
               }}
             >
               <Form.Item name="product">

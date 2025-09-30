@@ -42,7 +42,7 @@ const Contact = () => {
 
         <div className={styles.form}>
           <Form
-            form={form} // bind form instance
+            form={form} 
             name="contact-form"
             onFinish={onFinish}
             layout="vertical"

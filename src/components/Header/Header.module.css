@@ -116,31 +116,3 @@
         text-align: center;
     }
 }
-
-
-
-/* @media(max-width: 767px) {
-
-    .headerTop {
-        display: flex;
-        text-align: left;
-    }
-
-    .headerTop a img {
-        width: 25%;
-    }
-
-    .headerBottom {
-        display: none;
-    }
-
-    .hamburgerIcon{
-        display: block;
-    }
-
-    .mobileMenu {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-} */

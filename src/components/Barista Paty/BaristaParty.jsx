@@ -1,5 +1,4 @@
 import styles from "./BaristaParty.module.css";
-import SectionTitle from "../Section Title/SectionTitle";
 import Links from "../Links/Links";
 import party from "../../assets/party.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -22,7 +21,7 @@ const BaristaParty = () => {
               <hr />
               <h4>Every Friday & Saturday</h4>
               <p>
-                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt {" "}
                 <span className={styles.partyDesc2}>
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </span>
