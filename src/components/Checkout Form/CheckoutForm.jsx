@@ -90,8 +90,22 @@ const CheckoutForm = () => {
                   { required: true, message: "Please enter quantity" },
                   {
                     validator: (_, value) => {
-                      if (!value) return Promise.resolve();
-                      return Number(value) >= 1
+                      if (
+                        value === "" ||
+                        value === undefined ||
+                        value === null
+                      ) {
+                        return Promise.resolve();
+                      }
+
+                      const num = Number(value); 
+                      if (isNaN(num)) {
+                        return Promise.reject(
+                          new Error("Value must be a number")
+                        );
+                      }
+
+                      return num >= 1
                         ? Promise.resolve()
                         : Promise.reject(
                             new Error("Quantity must be at least 1")
@@ -102,9 +116,7 @@ const CheckoutForm = () => {
               >
                 <Input
                   placeholder="Quantity"
-                  onChange={(e) => {
-                    setQuantity(e.target.value);
-                  }}
+                  onChange={(e) => setQuantity(e.target.value)}
                 />
               </Form.Item>
 
@@ -165,7 +177,9 @@ const CheckoutForm = () => {
                 <Select placeholder="Select Payment Method">
                   <Select.Option value="UPI">UPI</Select.Option>
                   <Select.Option value="Card">Credit/Debit Card</Select.Option>
-                  <Select.Option value="Cash On Delivery">Cash on Delivery</Select.Option>
+                  <Select.Option value="Cash On Delivery">
+                    Cash on Delivery
+                  </Select.Option>
                 </Select>
               </Form.Item>
 
