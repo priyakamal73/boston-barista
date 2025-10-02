@@ -89,27 +89,23 @@ const CheckoutForm = () => {
                 rules={[
                   { required: true, message: "Please enter quantity" },
                   {
-                    validator: (_, value) => {
+                    validator: async (_, value) => {
                       if (
                         value === "" ||
                         value === undefined ||
                         value === null
                       ) {
-                        return Promise.resolve();
+                        return;
                       }
 
-                      const num = Number(value); 
+                      const num = Number(value);
                       if (isNaN(num)) {
-                        return Promise.reject(
-                          new Error("Value must be a number")
-                        );
+                        throw new Error("Value must be a number");
                       }
 
-                      return num >= 1
-                        ? Promise.resolve()
-                        : Promise.reject(
-                            new Error("Quantity must be at least 1")
-                          );
+                      if (num < 1) {
+                        throw new Error("Quantity must be at least 1");
+                      }
                     },
                   },
                 ]}
